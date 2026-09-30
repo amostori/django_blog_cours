@@ -1,3 +1,23 @@
 <ol>
     <li><code>django-admin startapp blogs .</code></li>
+    <li>Do settings.py dodaj aplikację</li>
     <li>Przygotuj model dla Category</li>
+    <li>Zarejestruj model w admin.py:
+        <code>admin.site.register(Category)</code>
+    </li>
+    <li><code>python manage.py makemigrations</code></li>
+    <li><code>python manage.py migrate</code></li>
+    <li>Do settings.py dodaj instrukcje dla MEDIA - dodaj folder media</li>
+    <li>Do urls.py dodaj instrukcje dla MEDIA</li>
+    <li>Model 'Blog'</li>
+    <li>Zarejestruj model w admin.py. i dodaj klasę 'BlogAdmin'</li>
+    <li>W celu obsługi obrazów: <code>pip install Pillow</code></li>
+    <li>Zmigruj bazę</li>
+    <li>Zaktualizuj metodę home w views.py tak by pobierała wszystkie kategorie i 
+        prześlij je do templates/home.html by wyświetlić je w menu nawigacji
+    </li>
+    <li>Dodaj url dla kategorii w urls.py</li>
+    <li>Aby context był dostępny dla innych szablonów, stwórz plik 'context_processors.py'
+        i zarejestruj go w settings.py</li>
+    </li>
+</ol>
